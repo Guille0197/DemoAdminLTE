@@ -166,8 +166,6 @@
                                    <div class="card">
                                         <div class="card-header">
                                              <h3 class="card-title">Listado de Registro de Pagos</h3>
-
-
                                         </div>
                                         <div class="row" style="margin: 10px;">
                                              <div class="col-sm-4">
@@ -175,135 +173,113 @@
                                                   <div class="form-group">
                                                        <label>Monto Pendiente
                                                        </label>
-                                                       <input type="text" class="form-control"
-                                                            style="text-align: right; width: auto;"
-                                                            placeholder="B/ 0.00">
+                                                       <input type="text" class="form-control" style="text-align: right; width: auto;" placeholder="B/ 0.00">
                                                   </div>
                                              </div>
                                              <div class="col-sm-4">
                                                   <div class="form-group">
-                                                       <label>Abono
-                                                       </label>
-                                                       <input type="text" class="form-control"
-                                                            style="text-align: right; width: auto;"
-                                                            placeholder="B/ 0.00">
+                                                       <label>Abono </label>
+                                                       <input type="text" class="form-control" style="text-align: right; width: auto;" placeholder="B/ 0.00">
                                                   </div>
                                              </div>
                                              <div class="col-sm-4">
                                                   <div class="form-group">
                                                        <div class="float-right">
                                                             <br>
-                                                            <a href="#" class="btn btn-primary swalDefaultSuccess"><i
-                                                                      class="fas fa-plus-circle"></i> Nuevo
-                                                                 Registro de pago</a>
+                                                            <a href="#" class="btn btn-primary swalDefaultSuccess"><i class="fas fa-plus-circle"></i> Nuevo Registro de pago</a>
                                                        </div>
                                                   </div>
-
                                              </div>
-
-
                                         </div>
-
-
-
                                    </div>
                                    <!-- /.card-header -->
-                                   <div class="card-body">
-                                        <table class="table table-striped table-bordered">
-                                             <thead>
-                                                  <tr>
-                                                       <th>Fecha
-                                                       </th>
-
-                                                       <th>Monto Abonado
-                                                       </th>
-                                                       <th>Monto Pendiente
-                                                       </th>
-                                                       <th> </th>
-                                                  </tr>
-                                             </thead>
-
-                                             <tbody style="text-align: right;">
-
-
-                                                  <tr>
-                                                       <td>02/05/2020</td>
-                                                       <td>$2.18</td>
-                                                       <td>$54.50</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>15/07/2019</td>
-                                                       <td>$80.18</td>
-                                                       <td>$27.91</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>03/05/2019</td>
-                                                       <td>$51.92</td>
-                                                       <td>$55.37</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>22/05/2019</td>
-                                                       <td>$32.97</td>
-                                                       <td>$84.05</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>16/02/2021</td>
-                                                       <td>$58.84</td>
-                                                       <td>$49.70</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>23/02/2021</td>
-                                                       <td>$55.93</td>
-                                                       <td>$2.91</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"></i> Imprimir Recibo</button>
-                                                       </td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>02/07/2019</td>
-                                                       <td>$56.15</td>
-                                                       <td>$1.14</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"> </i> Imprimir
-                                                                 Recibo</button></td>
-                                                  </tr>
-                                                  <tr>
-                                                       <td>27/04/2019</td>
-                                                       <td>$29.56</td>
-                                                       <td>$23.83</td>
-                                                       <td><button type="button" class="btn btn-block btn-primary"><i
-                                                                      class="fas fa-print"> </i> Imprimir
-                                                                 Recibo</button></td>
-                                                  </tr>
-                                             </tbody>
-                                        </table>
+                                   <!-- Card de la tabla -->
+                                   <div class="card">
+                                        <dv class="card-body">
+                                             <table class="table table-striped table-bordered">
+                                                  <thead class="text-center bg-secondary">
+                                                       <tr>
+                                                            <th>Fecha
+                                                            </th>
+                                                            <th>Monto Abonado
+                                                            </th>
+                                                            <th>Monto Pendiente
+                                                            </th>
+                                                            <th>Imprimir</th>
+                                                       </tr>
+                                                  </thead>
+                                                  <tbody style="text-align: right;">
+                                                       <tr>
+                                                            <td>02/05/2020</td>
+                                                            <td>$2.18</td>
+                                                            <td>$54.50</td>
+                                                            <td>
+                                                                 <button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>15/07/2019</td>
+                                                            <td>$80.18</td>
+                                                            <td>$27.91</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>03/05/2019</td>
+                                                            <td>$51.92</td>
+                                                            <td>$55.37</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>22/05/2019</td>
+                                                            <td>$32.97</td>
+                                                            <td>$84.05</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>16/02/2021</td>
+                                                            <td>$58.84</td>
+                                                            <td>$49.70</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>23/02/2021</td>
+                                                            <td>$55.93</td>
+                                                            <td>$2.91</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"></i> Imprimir Recibo</button>
+                                                            </td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>02/07/2019</td>
+                                                            <td>$56.15</td>
+                                                            <td>$1.14</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"> </i> Imprimir Recibo</button></td>
+                                                       </tr>
+                                                       <tr>
+                                                            <td>27/04/2019</td>
+                                                            <td>$29.56</td>
+                                                            <td>$23.83</td>
+                                                            <td><button type="button" onclick="print()" class="btn btn-block btn-primary"><i class="fas fa-print"> </i> Imprimir Recibo</button></td>
+                                                       </tr>
+                                                  </tbody>
+                                              </table>
+                                        </dv>
                                    </div>
-                                   <!-- /.card-body -->
+
+
                               </div>
                               <!-- /.card -->
                          </div>
                          <!-- /.col -->
                     </div>
                     <!-- /.row -->
-          </div>
-          </section>
+               </div>
+               </section>
           <!-- /.content -->
-
+               
      </div>
      <!-- /.content-wrapper -->
 
@@ -344,56 +320,49 @@
      <script src="../../plugins/toastr/toastr.min.js"></script>
 
      <script type="text/javascript">
-          $(function () {
-               const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 3000
-               });
 
-               $('.swalDefaultSuccess').click(function () {
-                    const swalWithBootstrapButtons = Swal.mixin({
-                         customClass: {
-                              confirmButton: 'btn btn-success',
-                              cancelButton: 'btn btn-danger'
-                         },
-                         buttonsStyling: true
-                    })
+          $('.swalDefaultSuccess').click(function () {
+               const swalWithBootstrapButtons = Swal.mixin({
+               })
 
-                    swalWithBootstrapButtons.fire({
-                         title: '¿Está seguro de realizar este pago?',
-                         text: "Usted no podrá revertir esta transacción",
-                         icon: 'warning',
-                         showCancelButton: true,
-                         confirmButtonText: 'Acepto',
-                         cancelButtonText: 'Cancelar',
-                         reverseButtons: true
-                    }).then((result) => {
-                         if (result.value) {
-                              swalWithBootstrapButtons.fire(
-                                   'Pago realizado',
-                                   'Su pago se ha realizado satisfactoriamente',
-                                   'success'
-                              )
-                         } else if (
-                              /* Read more about handling dismissals below */
-                              result.dismiss === Swal.DismissReason.cancel
-                         ) {
-                              swalWithBootstrapButtons.fire(
-                                   'Pago cancelado',
-                                   'Su pago ha sido cancelado',
-                                   'error'
-                              )
-                         }
-                    })
-               });
-
-
+               swalWithBootstrapButtons.fire({
+                    title: '¿Está seguro de realizar este pago?',
+                    text: "Usted no podrá revertir esta transacción",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Acepto',
+                    cancelButtonText: 'Cancelar',
+                    confirmButtonColor: '#28a745',
+                    cancelButtonColor: '#dc3545',
+                    reverseButtons: true
+               }).then((result) => {
+                    if (result.value) {
+                         swalWithBootstrapButtons.fire(
+                              'Pago realizado',
+                              'Su pago se ha realizado satisfactoriamente',
+                              'success'
+                         )
+                    } else if (
+                         /* Read more about handling dismissals below */
+                         result.dismiss === Swal.DismissReason.cancel
+                    ) {
+                         swalWithBootstrapButtons.fire(
+                              'Pago cancelado',
+                              'Su pago ha sido cancelado',
+                              'Error'
+                         )
+                    }
+               })
           });
-
      </script>
-
+     <script>
+          function printPDF() {
+    var printDoc = new jsPDF();
+    printDoc.fromHTML($('#pdf').get(0), 10, 10, {'width': 180});
+    printDoc.autoPrint();
+    printDoc.output("dataurlnewwindow"); // this opens a new popup,  after this the PDF opens the print window view but there are browser inconsistencies with how this is handled
+}
+     </script>
 </body>
 
 </html>
