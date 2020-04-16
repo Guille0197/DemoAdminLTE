@@ -67,7 +67,8 @@
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <a href="../index.html" class="brand-link">
-                    <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
+                        class="brand-image img-circle elevation-3" style="opacity: .8">
                     <span class="brand-text font-weight-light">DIPROCESS</span>
                 </a>
 
@@ -85,10 +86,11 @@
 
                     <!-- Sidebar Menu -->
                     <nav class="mt-2">
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                            data-accordion="false">
                             <!-- Add icons to the links using the .nav-icon class
                            with font-awesome or any other icon font library -->
-                           <li class="nav-item">
+                            <li class="nav-item">
                                 <a href="../index.html" class="nav-link">
                                     <i class="fas fa-home"></i>
                                     <p>
@@ -176,7 +178,226 @@
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <!-- /.content -->
+                <section class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>Eventos</h1>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+                                    <li class="breadcrumb-item active">Eventos</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Listado de Eventos</h3>
+
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <table id="example1" class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th># Cotización</th>
+                                                    <th>Nombre Cliente</th>
+                                                    <th>Fecha Expiración</th>
+                                                    <th># Servicios</th>
+                                                    <th>Monto Total</th>
+                                                    <th>Saldo Pendiente</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Lev O. Kramer</td>
+                                                    <td>30/10/2020</td>
+                                                    <td>4</td>
+                                                    <td>$82.10</td>
+                                                    <td>$25.16</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Giselle C. Anderson</td>
+                                                    <td>20/07/2020</td>
+                                                    <td>5</td>
+                                                    <td>$8.74</td>
+                                                    <td>$64.07</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Giacomo E. Sandoval</td>
+                                                    <td>10/10/2020</td>
+                                                    <td>6</td>
+                                                    <td>$12.11</td>
+                                                    <td>$32.68</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Sydnee Y. Ratliff</td>
+                                                    <td>18/06/2020</td>
+                                                    <td>3</td>
+                                                    <td>$42.61</td>
+                                                    <td>$53.06</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Leo E. Harrell</td>
+                                                    <td>01/07/2020</td>
+                                                    <td>2</td>
+                                                    <td>$17.58</td>
+                                                    <td>$85.37</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Ulric W. Shields</td>
+                                                    <td>19/01/2021</td>
+                                                    <td>3</td>
+                                                    <td>$30.33</td>
+                                                    <td>$49.48</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Gail V. Vincent</td>
+                                                    <td>04/08/2020</td>
+                                                    <td>4</td>
+                                                    <td>$60.97</td>
+                                                    <td>$29.43</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Kaden Y. Guzman</td>
+                                                    <td>21/07/2019</td>
+                                                    <td>1</td>
+                                                    <td>$86.98</td>
+                                                    <td>$43.51</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td>
+                                                        <div class="float-right">
+                                                            <a href="../pages/eventos.html" class="btn btn-warning"
+                                                                data-toggle="modal" data-target="#staticBackdrop">
+                                                                <i class="fas fa-edit"></i> Registrar evento</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Noah A. Myers</td>
+                                                    <td>31/01/2021</td>
+                                                    <td>4</td>
+                                                    <td>$81.58</td>
+                                                    <td>$57.06</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>Wendy F. Edwards</td>
+                                                    <td>13/10/2020</td>
+                                                    <td>6</td>
+                                                    <td>$33.96</td>
+                                                    <td>$49.94</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td> <div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>Flavia H. Wiggins</td>
+                                                    <td>04/12/2019</td>
+                                                    <td>4</td>
+                                                    <td>$34.81</td>
+                                                    <td>$4.45</td>
+                                                    <td> <a href="#" class="btn btn-primary"> <i class="fas fa-eye"></i>
+                                                            Ver eventos</a> </td>
+                                                    <td><div class="float-right">
+                                                        <a href="../pages/eventos.html" class="btn btn-warning"
+                                                            data-toggle="modal" data-target="#staticBackdrop">
+                                                            <i class="fas fa-edit"></i> Registrar evento</a>
+                                                    </div></td>
+                                                </tr>
+                                        </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                </section>
             </div>
             <!-- /.content-wrapper -->
             <footer class="main-footer">
@@ -193,6 +414,47 @@
             <!-- /.control-sidebar -->
         </div>
         <!-- ./wrapper -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Registre un nuevo evento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            
+                            <div class="form-group">
+                                <label>Obligatorio</label>
+                                <!-- Select -->
+                                <select class="form-control">
+                                    <option selected disabled>Seleccione</option>
+                                    <option>Acción</option>
+                                    <option>Evento</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <h3 class="card-title">Comentarios</h3>
+                                    <textarea class="autoExpand forumPost form-control" rows="4" data-min-rows="3"  placeholder="Coloque un comentario"></textarea>
+                                  </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <a  href="#"type="button" class="btn btn-success swalDefaultSuccess"><i class="fas fa-save"></i>
+                            Guardar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- jQuery -->
         <script src="plugins/jquery/jquery.min.js"></script>
