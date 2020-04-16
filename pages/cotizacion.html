@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Widgets</title>
+  <title>DIPROCESS| COTIZAR</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,6 +15,13 @@
   <!-- DataTables -->
   <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="../../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">  
+  <!-- Toastr -->
+  <link rel="stylesheet" href="../../plugins/toastr/toastr.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
@@ -169,7 +176,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Datos de la Cotización</h1>
+                <h1>Cotización</h1>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -194,11 +201,11 @@
                   <div class="card-header">
                     <h3 class="card-title">
                       <i class="fas fa-edit"></i>
-                      Vertical Tabs Examples
+                      Datos de la Cotización
                     </h3>
                   </div>
                   <div class="card-body ">
-                    <h4>Left Sided</h4>
+                    <h4>Menú lateral</h4>
                     <div class="row">
                       <div class="col-5 col-sm-3">
                         <div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist"
@@ -314,7 +321,7 @@
 
                                 <div class="card-footer ">
                                   <div class="float-right">
-                                    <a href="#vert-tabs-profile-tab" class="btn btn-primary">Siguiente</a>
+                                    <a href="#vert-tabs-profile-tab" class="btn btn-primary swalDefaultSuccess">Siguiente</a>
                                   </div>
                                 </div>
                               </form>
@@ -334,53 +341,51 @@
                                   <table class="table table-striped table-bordered">
                                     <thead>
                                       <div class="card-header">
-                                        <h3 class="card-title">Servicios a Contratar		
-                                        </h3>
-                                        <div class="float-right">
-                                          <a href="../pages/cotizacion.html" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Agregar servicio</a>
+                                            <h3 class="card-title">Servicios a Contratar</h3>
+                                            <div class="float-right">
+                                              <a href="../pages/cotizacion.html" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop"><i class="fas fa-plus-circle"></i> Agregar servicio</a>
+                                            </div>
                                         </div>
                                       </div>
                                       <tr>
                                         <th style="width: 10px">#</th>
-                                        <th>Nombre del Servicio
-                                        </th>
-                                        <th>Precio 
-                                        </th>
+                                        <th>Nombre del Servicio</th>
+                                        <th>Precio</th>
                                         <th style="width: 40px"></th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td>1.</td>
-                                        <td>Update software</td>
+                                        <td>Litios</td>
                                         <td>
-                                         50.00
+                                         800.00
                                         </td>
-                                        <td><button type="button" class="btn btn-block btn-danger">Elimiar</button></td> 
+                                        <td><button type="button" class="btn btn-block btn-danger swalDeleted"><i class="fas fa-trash-alt"></i>Elimiar</button></td> 
                                       </tr>
                                       <tr>
                                         <td>2.</td>
-                                        <td>Clean database</td>
+                                        <td>Compra de Terreno</td>
                                         <td>
-                                          50.00
+                                          600.00
                                         </td>
-                                        <td><button type="button" class="btn btn-block btn-danger">Elimiar</button></td> 
+                                        <td><button type="button" class="btn btn-block btn-danger swalDeleted"><i class="fas fa-trash-alt"></i> Elimiar</button></td> 
                                       </tr>
                                       <tr>
                                         <td>3.</td>
-                                        <td>Cron job running</td>
+                                        <td>Creación de Sociedad Anónima</td>
                                         <td>
-                                          60.00
+                                          400.00
                                         </td>
-                                        <td><button type="button" class="btn btn-block btn-danger">Elimiar</button></td> 
+                                        <td><button type="button" class="btn btn-block btn-danger swalDeleted"><i class="fas fa-trash-alt"></i> Elimiar</button></td> 
                                       </tr>
                                       <tr>
                                         <td>4.</td>
-                                        <td>Fix and squish bugs</td>
+                                        <td>Otro Servicio</td>
                                         <td>
-                                          70.00
+                                          200.00
                                         </td>
-                                        <td><button type="button" class="btn btn-block btn-danger">Elimiar</button></td> 
+                                        <td><button type="button" class="btn btn-block btn-danger swalDeleted"><i class="fas fa-trash-alt"></i> Elimiar</button></td> 
                                       </tr>
                                     </tbody>
                                   </table>
@@ -397,7 +402,7 @@
                                   <div class="card-footer ">                                    
                                     <div class="float-right">    
                                       <a href="#vert-tabs-profile-tab" class="btn btn-primary">Atrás</a>                                  
-                                      <a href="#vert-tabs-profile-tab" class="btn btn-primary">Siguiente</a>
+                                      <a href="#vert-tabs-profile-tab" class="btn btn-primary swalDefaultSuccess">Siguiente</a>
                                     </div>
                                   </div>
                               </form>
@@ -431,35 +436,34 @@
                                     <tbody>
                                       <tr>
                                         <td>1.</td>
-                                        <td>Update software</td>
+                                        <td>Litios</td>
                                         <td style="text-align: right">
-                                         50.00
+                                         800.00
                                         </td>
                                      
                                       </tr>
                                       <tr>
                                         <td>2.</td>
-                                        <td>Clean database</td>
+                                        <td>Compra de Terreno</td>
                                         <td style="text-align: right">
-                                          50.00
+                                          600.00
                                         </td>
                                      
                                       </tr>
                                       <tr>
                                         <td>3.</td>
-                                        <td>Cron job running</td>
+                                        <td>Creación de Sociedad Anónima</td>
                                         <td style="text-align: right">
-                                          60.00
+                                          400.00
                                         </td>
                                       
                                       </tr>
                                       <tr>
                                         <td>4.</td>
-                                        <td>Fix and squish bugs</td>
+                                        <td>Otro Servicio</td>
                                         <td style="text-align: right">
-                                          70.00
+                                          200.00
                                         </td>
-                                     
                                       </tr>
                                     </tbody>
                                   </table>    
@@ -467,22 +471,16 @@
                                   <table class="table table-striped table-bordered float-right pb-5" style="width: 50%;">
                                     <tbody style="text-align: right">
                                       <tr>
-                                      <th style="text-align: right;">SubTotal:
-                                      </th>
-                                      <td > B/.1,550.00 
-                                      </td>
+                                        <th style="text-align: right;">SubTotal:</th>
+                                        <td > B/.2,000.00</td>
                                     </tr>
                                     <tr>
-                                      <th >ITBMS(7%):
-                                      </th>
-                                      <td > B/.108.50 
-                                      </td>
+                                      <th >ITBMS(7%):</th>
+                                      <td > B/.140.00</td>
                                     </tr>
                                     <tr>
-                                      <th >Total:
-                                      </th>
-                                      <td > B/.1,658.50 
-                                      </td>
+                                      <th >Total:</th>
+                                      <td > B/.2,140.00</td>
                                     </tr>
                                   </tbody>
                                 </table>  
@@ -490,7 +488,7 @@
                                   <div class="card-footer ">                                    
                                     <div class="float-right">    
                                       <a href="#vert-tabs-profile-tab" class="btn btn-primary">Atrás</a>                                  
-                                      <a href="registrarPagos.html" class="btn btn-primary">Crear Cotización</a>
+                                      <a href="registrarPagos.html" class="btn btn-primary swalDefaultSuccess">Crear Cotización</a>
                                     </div>
                                   </div>
                               </form>
@@ -529,10 +527,49 @@
     </div>
     <!-- ./wrapper -->
 
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Agregar servicios a la cotización</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group" data-select2-id="39">
+          <label>Seleccione los servicios</label>
+          <select class="select2 select2-hidden-accessible" multiple="" data-placeholder="Seleccione servicio" style="width: 100%;" data-select2-id="7" tabindex="-1" aria-hidden="true">
+            <option data-select2-id="29">Litio</option>
+            <option data-select2-id="30">Creación de sociedad anónimas</option>
+            <option data-select2-id="31">Asesoría legal</option>
+            <option data-select2-id="32">Defensa judicial</option>
+            <option data-select2-id="33">Divorcios</option>
+            <option data-select2-id="34">Trámite de visado</option>
+            <option data-select2-id="35">Trámites generales</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success swalDefaultSuccess"><i class="fas fa-save"></i> Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="../../plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- Toastr -->
+    <script src="../../plugins/toastr/toastr.min.js"></script>
+    <!-- Select2 -->
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
     <!-- DataTables -->
     <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -560,6 +597,63 @@
         });
       });
     </script>
-  </body>
 
-  </html>
+    <!-- SweetAlert2 -->
+<script>
+    $('.swalDeleted').click(function() {
+      Swal.fire({
+          title: '¿Estás seguro?',
+          text: "",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#28a745',
+          cancelButtonColor: '#dc3545',
+          confirmButtonText: 'Eliminar',
+          cancelButtonText: 'Cancelar'
+          }).then((result) => {
+          if (result.value) {
+              Swal.fire(
+              '¡Eliminado!',
+              'Se ha eliminado correctamente.',
+              'success'
+              )
+          }
+      })
+  });
+</script>
+
+<!-- SweetAlert2 toast -->
+<script>
+  $(function() {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 4000
+    });
+
+    $('.swalDefaultSuccess').click(function() {
+      Toast.fire({
+        icon: 'success',
+        title: 'Registrado guardado satisfactoriamente'
+      })
+    });
+    
+  }); 
+</script>
+
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
+  })
+</script>
+
+</body>
+</html>
